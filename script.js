@@ -22,6 +22,13 @@ onload = function () {
         textbox.selectionStart = textbox.selectionEnd = textbox.value.length;
     };
 
+    clear.onclick = function () {
+        stack.clear();
+        text = "";
+        textbox.value = "";
+        temptext.innerHTML = "Sequence of operations will be shown here !";
+    };
+
     textbox.oninput = function(event){
         // console.log(event);
         switch(event.inputType){

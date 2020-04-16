@@ -11,6 +11,11 @@ class Stack{
         this.stack = [];
     }
 
+    clear(){
+        this.size = 0;
+        this.stack = [];
+    }
+
     isEmpty(){
         return  ( this.size === 0 );
     }
