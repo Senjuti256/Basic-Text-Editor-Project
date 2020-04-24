@@ -35,7 +35,8 @@ class Stack{
 
     push(type, char){
         if(this.isEmpty()){
-            this.stack.push([type, char]);
+            if(type===0)
+                this.stack.push([type, char]);
         } else{
             let tmp = this.top();
             if(tmp[0]===type && tmp[1].length < this.buffer){
